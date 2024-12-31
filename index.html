@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L3D-Pose</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <header class="header area">
+
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+        <h1>L3D-Pose: Lifting Pose for 3D Avatars from a Single Camera in the Wild</h1>
+        <h3>Soumyaratna Debnath*, Harish Katti*, Shashikant Verma, Shanmuganathan Raman</h3>
+        <h3 style="margin-top: 20px;"><a href="https://2025.ieeeicassp.org/" class="sigAnchor">2025 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2025)</a></h3>
+    </header>
+
+    <main class="content">
+        <section>
+            <h2>Abstract</h2>
+            <p class="abstract">
+                While 2D pose estimation has advanced our ability to interpret body movements in animals and primates, it is limited by the lack of depth information, constraining its application range. 3D pose estimation provides a more comprehensive solution by incorporating spatial depth, yet creating extensive 3D pose datasets for animals is challenging due to their dynamic and unpredictable behaviours in natural settings. To address this, we propose a hybrid approach that utilizes rigged avatars and the pipeline to generate synthetic datasets to acquire the necessary 3D annotations for training. Our method introduces a simple attention-based MLP network for converting 2D poses to 3D, designed to be independent of the input image to ensure scalability for poses in natural environments. Additionally, we identify that existing anatomical keypoint detectors are insufficient for accurate pose retargeting onto arbitrary avatars. To overcome this, we present a lookup table based on a deep pose estimation method using a synthetic collection of diverse actions rigged avatars perform. Our experiments demonstrate the effectiveness and efficiency of this lookup table-based retargeting approach.  Overall, we propose a comprehensive framework with systematically synthesized datasets for lifting poses from 2D to 3D and then utilize this to re-target motion from wild settings onto arbitrary avatars.    
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        &copy; 2024 Soumyaratna Debnath, CVIG Lab, Indian Institute of Technology Gandhinagar
+    </footer>
+
+</body>
+</html>
