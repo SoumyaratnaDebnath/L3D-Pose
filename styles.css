@@ -24,6 +24,7 @@ body {
 .header h1 {
     margin-bottom: 10px;
     font-weight: 600;
+    font-size: 36px;
 }
 
 /* Main content styles */

@@ -37,10 +37,14 @@
 
         <h1>L3D-Pose: Lifting Pose for 3D Avatars from a Single Camera in the Wild</h1>
         <h3>Soumyaratna Debnath*, Harish Katti*, Shashikant Verma, Shanmuganathan Raman</h3>
-        <h3 style="margin-top: 20px;"><a href="https://2025.ieeeicassp.org/" class="sigAnchor">2025 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2025)</a></h3>
+        <h3 style="margin-top: 20px;"><a href="https://2025.ieeeicassp.org/" class="sigAnchor">2025 IEEE International Conference on Acoustics, Speech, and Signal Processing</a></h3>
     </header>
 
     <main class="content">
+        <div style="justify-content: center; display: flex; margin-bottom: 20px;">
+            <a class="btn btn-dark" href="https://arxiv.org/abs/2501.01174"><img src="files/description.svg"/> Paper</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="btn btn-dark" href="https://www.kaggle.com/datasets/soumyaratnadebnath/l3d-pose-dataset"><img src="files/database.svg"/> L3D-Pose Dataset</a>
+        </div>
         <section>
             <h2>Abstract</h2>
             <p class="abstract">
@@ -48,6 +52,21 @@
             </p>
         </section>
 
+        <section>
+            <h2>Model Architecture and Workflow</h2>
+            <img src="files/fig_flow.jpg" style="width: 100%;"/>
+            <p style="text-align: justify; margin-top: 20px;">
+                For a given natural image, we first use pre-trained 2D pose estimation techniques to obtain 2D keypoints in the image. Our attention-based simple MLP architecture, trained on a synthetic dataset, effectively lifts these normalised 2D keypoints into a partial soft 3D pose, as illustrated at the top. We then match this partial 3D pose to the closest deep pose from a look-up table, which includes a diverse set of 3D poses derived from synthetic motion sequences. The Deep 3D Pose provides the necessary information to transfer the pose from the image onto an avatar model, as demonstrated in the bottom.
+            </p>
+        </section>
+
+        <!-- <section>
+            <h2>Lifting Results</h2>
+            <img src="files/result.jpg" style="width: 100%;"/>
+            <p style="text-align: justify; margin-top: 20px;">
+                Lifting and retargeting of 3D Pose on rigged models obtained by the proposed framework. 
+            </p>
+        </section> -->
     </main>
 
     <footer class="footer">
